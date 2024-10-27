@@ -25,8 +25,28 @@ include('./core/protostrap.php');
               <?php echo $value; ?><br>
             <?php } ?>
             
+            <div class="row">
+                <div class="col-4 debugborder pv3">
+                    <sl-card>
+                    <div slot="header">
+                        Card Header Title
+                        
+                      </div>
+
+                      This card has a header. You can put all sorts of things in it!
+                    </sl-card>
+                </div>
+                <div class="col-8 debugborder">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, officia? Fuga quaerat dolor consectetur magnam minima ducimus aspernatur facere distinctio odit perferendis necessitatibus, doloremque inventore optio maiores. Maxime, voluptatibus alias.
+                </div>
+            </div>
+
             Text
-            
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+              </ul>
              <sl-button>Click me</sl-button> <br><br>
              <date-picker value="12.01.2024" label="Date"></date-picker> <br><br>
              <date-picker value="2024-01-12"></date-picker>

@@ -17,13 +17,21 @@ class Datepicker extends HTMLElement {
     this._longPressIntervalIds = []
     this._longPressTimerIds = []
     this._calTemplate = `
-    <div class="calContainer" tabindex="0">
+    <sl-card class="calContainer" tabindex="0">
       <div class="calHeader">
-        <div class="calCtrl calCtrlPrevYear">&laquo;&laquo;</div>
-        <div class="calCtrl calCtrlPrevMonth">&laquo;</div>
+        <div class="calCtrl calCtrlPrevYear">
+            <sl-icon name="chevron-double-left"></sl-icon>
+        </div>
+        <div class="calCtrl calCtrlPrevMonth">
+            <sl-icon name="chevron-left"></sl-icon>
+        </div>
         <div class="calTitle"></div>
-        <div class="calCtrl calCtrlNextMonth">&raquo;</div>
-        <div class="calCtrl calCtrlNextYear">&raquo;&raquo;</div>
+        <div class="calCtrl calCtrlNextMonth">
+            <sl-icon name="chevron-right"></sl-icon>
+        </div>
+        <div class="calCtrl calCtrlNextYear">
+            <sl-icon name="chevron-double-right"></sl-icon>
+        </div>
         <div class="calCtrl calCtrlHideCal">x</div>
       </div>
       <div class="calGrid">
@@ -69,7 +77,7 @@ class Datepicker extends HTMLElement {
         <div class="calDay"></div>
         <div class="calDay"></div>
       </div>
-    </div>`
+    </sl-card>`
   }
 
   static get observedAttributes () {

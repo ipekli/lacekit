@@ -1,0 +1,557 @@
+// Colors
+    // Palette
+        // Grey
+            $color-grey-100: #FFFFFF;
+            $color-grey-150: #FAFAFA;
+            $color-grey-200: #F2F2F2;
+            $color-grey-300: #E2E2E2;
+            $color-grey-400: #CACACA;
+            $color-grey-425: #B9B9B9;
+            $color-grey-450: #959595;
+            $color-grey-500: #757575; // Secondary typo color
+            $color-grey-600: #585858;
+            $color-grey-700: #212121; // Primary typo color
+            $color-grey-800: #000000;
+
+        // Red
+            $color-red-100: #FEF5F5;
+            $color-red-150: #FCE1E1;
+            $color-red-200: #FFCCCC;
+            $color-red-300: #FFA3A3;
+            $color-red-400: #FF7A7A;
+            $color-red-425: #FF5252;
+            $color-red-450: #FF0000;
+            $color-red-500: #D50000;
+            $color-red-600: #9C1111;
+            $color-red-700: #850000;
+            $color-red-800: #520000;
+            $color-red-400a: $color-red-450;
+
+        // Pink (hue 339)
+            $color-pink-100: #FCF4F7;
+            $color-pink-150: #FAEBF0;
+            $color-pink-200: #F8E0E9;
+            $color-pink-300: #F4CAD8;
+            $color-pink-400: #F0B7CB;
+            $color-pink-425: #EA8DAD;
+            $color-pink-450: #E05989;
+            $color-pink-500: #D6336C;
+            $color-pink-600: #B62B5B;
+            $color-pink-700: #912249;
+            $color-pink-800: #781C3C;
+
+        // Purple (hue 288)
+            $color-purple-100: #FAF5FC;
+            $color-purple-150: #F7ECF9;
+            $color-purple-200: #F2E2F6;
+            $color-purple-300: #EACDF1;
+            $color-purple-400: #E2BAEB;
+            $color-purple-425: #D393E3;
+            $color-purple-450: #BF60D5;
+            $color-purple-500: #AE3EC9;
+            $color-purple-600: #9434AB;
+            $color-purple-700: #762A88;
+            $color-purple-800: #622371;
+            $color-purple-400a: #CC00FF;
+
+        // Violet
+            $color-violet-100: #F7F5FD;
+            $color-violet-150: #EFEBFC;
+            $color-violet-200: #E7E1F9;
+            $color-violet-300: #D7CDF5;
+            $color-violet-400: #C9BCF1;
+            $color-violet-425: #AB94EC;
+            $color-violet-450: #8563E3;
+            $color-violet-500: #6741D9;
+            $color-violet-600: #5737B8;
+            $color-violet-700: #452C93;
+            $color-violet-800: #39247A;
+
+        // Blue
+            $color-blue-100: #F3F8FC;
+            $color-blue-150: #E7F2FA;
+            $color-blue-200: #DDEBF8; 
+            $color-blue-300: #c4ddf4;
+            $color-blue-400: #afd1f0;
+            $color-blue-425: #80B6EA;
+            $color-blue-450: #4594E1;
+            $color-blue-500: #1C7CD6;
+            $color-blue-600: #1769B6;
+            $color-blue-700: #00529E;
+            $color-blue-800: #003A70;
+
+        // Cyan
+            $color-cyan-100: #F3FAFB;
+            $color-cyan-150: #E6F4F6;
+            $color-cyan-200: #DBEFF2;
+            $color-cyan-300: #C0E3E9;
+            $color-cyan-400: #ABDBE2;
+            $color-cyan-425: #78C6D2;
+            $color-cyan-450: #38ACBE;
+            $color-cyan-500: #1098AD;
+            $color-cyan-600: #0D8193;
+            $color-cyan-700: #0A6775;
+            $color-cyan-800: #084F59;
+            $color-cyan-400a: #00FFFF;
+
+        // Green
+            $color-green-100: #F5FAF6;
+            $color-green-150: #EAF5EC;
+            $color-green-200: #DFF0E2;
+            $color-green-300: #C8E5CD;
+            $color-green-400: #B6DDBD;
+            $color-green-425: #8ACA96;
+            $color-green-450: #54B266;
+            $color-green-500: #2F9E44;
+            $color-green-600: #278639;
+            $color-green-700: #1F6B2E;
+            $color-green-800: #195725;
+            $color-green-400a: #55FF00;
+
+        // Lime
+            $color-lime-100: #F8FBF4;
+            $color-lime-150: #F1F7E7;
+            $color-lime-200: #E9F4DB;
+            $color-lime-300: #DCEDC5;
+            $color-lime-400: #CEE6AD;
+            $color-lime-425: #B1D879;
+            $color-lime-450: #8DC839;
+            $color-lime-500: #74B816;
+            $color-lime-600: #629C12;
+            $color-lime-700: #50800F;
+            $color-lime-800: #3F640C;
+
+        // Yellow
+            $color-yellow-100: #FEFECA;
+            $color-yellow-150: #FEFAE4;
+            $color-yellow-200: #FEF8D9;
+            $color-yellow-300: #FDF3C0;
+            $color-yellow-400: #fdeea6;
+            $color-yellow-425: #FDE66C;
+            $color-yellow-450: #FCDC16;
+            $color-yellow-500: #FAD105;
+            $color-yellow-600: #D4B104;
+            $color-yellow-700: #AA8E03;
+            $color-yellow-800: #665500;
+            $color-yellow-400a: #ffff00;
+
+        // Orange
+            $color-orange-100: #FEF7F2;
+            $color-orange-150: #FEEFE5;
+            $color-orange-200: #FDE8DA;
+            $color-orange-300: #FFDCBF;
+            $color-orange-400: #FCC9A8;
+            $color-orange-425: #FCAB71;
+            $color-orange-450: #FA852A;
+            $color-orange-500: #F76707;
+            $color-orange-600: #D25705;
+            $color-orange-700: #A74504;
+            $color-orange-800: #8D3902;
+            $color-orange-400a: #FEA900;
+
+        // Brown
+            $color-brown-100: #F8F7F6;
+            $color-brown-150: #F1EDEC;
+            $color-brown-200: #EBE5E3;
+            $color-brown-300: #DDD4D0;
+            $color-brown-400: #D0C3BE;
+            $color-brown-425: #B5A198;
+            $color-brown-450: #95776A;
+            $color-brown-500: #7A5547;
+            $color-brown-600: #67483C;
+            $color-brown-700: #523930;
+            $color-brown-800: #3D2A24;
+
+
+    // Main colors
+        $color-default: $color-blue-600;
+        $color-success: $color-green-600;
+        $color-caution: $color-yellow-450;
+        $color-warning: $color-orange-500;
+        $color-danger: $color-red-500;
+        $color-info: $color-blue-500;
+        $color-surface-disabled: rgba($color-grey-700, 0.08);
+
+
+    // Typography colors
+        $color-typo-primary: $color-grey-700;
+        $color-typo-secondary: rgba($color-typo-primary, 0.64);
+        $color-typo-primary-inverse: $color-grey-100;
+        $color-typo-secondary-inverse: rgba($color-typo-primary-inverse, 0.88);
+        $color-typo-disabled: rgba($color-grey-700, 0.32);
+
+        $color-typo-info: $color-blue-800;
+        $color-typo-success: $color-green-800;
+        $color-typo-caution: $color-yellow-800;
+        $color-typo-warning: $color-orange-800;
+        $color-typo-danger: $color-red-800;
+        $color-typo-cyan: $color-cyan-800;
+        $color-typo-lime: $color-lime-800;
+        $color-typo-pink: $color-pink-800;
+        $color-typo-purple: $color-purple-800;
+        $color-typo-violet: $color-violet-800;
+        $color-typo-brown: $color-brown-800;
+
+        $color-typo-cta: $color-typo-primary-inverse;
+        $color-typo-cta-inverse: $color-typo-primary;
+
+
+    // Addons
+        $color-typo-addon-default: $color-typo-secondary;
+        $color-typo-addon-default-hovered: $color-typo-primary;
+        $color-typo-addon-info-hovered: $color-blue-200;
+        $color-typo-addon-success-hovered: $color-green-200;
+        $color-typo-addon-warning-hovered: $color-orange-200;
+        $color-typo-addon-danger-hovered: $color-red-200;
+        $color-typo-addon-cyan-hovered: $color-cyan-200;
+        $color-typo-addon-lime-hovered: $color-lime-200;
+        $color-typo-addon-pink-hovered: $color-pink-200;
+        $color-typo-addon-purple-hovered: $color-purple-200;
+        $color-typo-addon-violet-hovered: $color-violet-200;
+        $color-typo-addon-brown-hovered: $color-brown-200;
+        $color-typo-addon-black-hovered: $color-grey-425;
+
+
+    // Surface colors
+        $color-surface-primary: $color-grey-100;
+        $color-surface-secondary: $color-grey-150;
+        $color-surface-tertiary: $color-grey-200;
+        $color-surface-disabled: rgba($color-grey-700, 0.08);
+
+        $color-surface-primary-mobile: $color-surface-secondary;
+
+        $color-surface-tonal-info: $color-blue-200;
+        $color-surface-tonal-success: $color-green-200;
+        $color-surface-tonal-caution: $color-yellow-300;
+        $color-surface-tonal-warning: $color-orange-200;
+        $color-surface-tonal-danger: $color-red-200;
+        $color-surface-tonal-cyan: $color-cyan-200;
+        $color-surface-tonal-lime: $color-lime-200;
+        $color-surface-tonal-pink: $color-pink-200;
+        $color-surface-tonal-purple: $color-purple-200;
+        $color-surface-tonal-violet: $color-violet-200;
+        $color-surface-tonal-brown: $color-brown-200;
+        $color-surface-tonal-black: $color-grey-300;
+
+
+    // Interaction colors
+        $color-surface-interactive-default-hovered: $color-blue-700;
+        $color-surface-interactive-default-pressed: $color-blue-450;
+
+        $color-surface-interactive-info-hovered: $color-blue-600;
+        $color-surface-interactive-info-pressed: $color-blue-425;
+
+        $color-surface-interactive-caution-hovered: $color-yellow-500;
+        $color-surface-interactive-caution-pressed: $color-yellow-400;
+
+        $color-surface-interactive-warning-hovered: $color-orange-600;
+        $color-surface-interactive-warning-pressed: $color-orange-425;
+
+        $color-surface-interactive-danger-hovered: $color-red-600;
+        $color-surface-interactive-danger-pressed: $color-red-450;
+
+        $color-surface-interactive-cyan: $color-cyan-500;
+        $color-surface-interactive-cyan-hovered: $color-cyan-600;
+        $color-surface-interactive-cyan-pressed: $color-cyan-425;
+
+        $color-surface-interactive-lime: $color-lime-500;
+        $color-surface-interactive-lime-hovered: $color-lime-600;
+        $color-surface-interactive-lime-pressed: $color-lime-425;
+
+        $color-surface-interactive-pink: $color-pink-500;
+        $color-surface-interactive-pink-hovered: $color-pink-600;
+        $color-surface-interactive-pink-pressed: $color-pink-425;
+
+        $color-surface-interactive-purple: $color-purple-500;
+        $color-surface-interactive-purple-hovered: $color-purple-600;
+        $color-surface-interactive-purple-pressed: $color-purple-425;
+
+        $color-surface-interactive-violet: $color-violet-500;
+        $color-surface-interactive-violet-hovered: $color-violet-600;
+        $color-surface-interactive-violet-pressed: $color-violet-425;
+
+        $color-surface-interactive-brown: $color-brown-500;
+        $color-surface-interactive-brown-hovered: $color-brown-600;
+        $color-surface-interactive-brown-pressed: $color-brown-425;
+
+        $color-surface-interactive-black: $color-grey-700;
+        $color-surface-interactive-black-hovered: $color-grey-600;
+        $color-surface-interactive-black-pressed: $color-grey-450;
+
+        $color-overlay-default: rgba($color-default, 0.08);
+        $color-overlay-default-strong: rgba($color-default, 0.24);
+
+        $color-overlay-danger: rgba($color-danger, 0.08);
+        $color-overlay-danger-strong: rgba($color-danger, 0.24);
+
+        $color-overlay-warning: rgba($color-warning, 0.08);
+        $color-overlay-warning-strong: rgba($color-warning, 0.24);
+
+        $color-overlay-caution: rgba($color-caution, 0.16);
+        $color-overlay-caution-strong: rgba($color-caution, 0.48);
+
+        $color-overlay-success: rgba($color-success, 0.08);
+        $color-overlay-success-strong: rgba($color-success, 0.24);
+
+        $color-overlay-black: rgba($color-grey-700, 0.08);
+        $color-overlay-black-strong: rgba($color-grey-700, 0.24);
+
+        $color-overlay-white: rgba($color-grey-100, 0.16);
+        $color-overlay-white-strong: rgba($color-grey-100, 0.48);
+
+        $color-overlay-cyan: rgba($color-cyan-500, 0.08);
+        $color-overlay-cyan-strong: rgba($color-cyan-500, 0.24);
+
+
+    // Border colors
+        $color-border-divider: $color-grey-300;
+        $color-border-white: $color-grey-100;
+        $color-border-grey: $color-grey-500;
+        $color-border-grey-hovered: $color-grey-700;
+        $color-border-disabled: rgba($color-grey-700, 0.32);
+
+
+    // Highlight colors
+        $highlightRed: $color-red-450;
+        $highlightLightRed: $color-red-200;
+        $highlightOrange: $color-orange-500;
+        $highlightLightOrange: $color-orange-200;
+        $highlightYellow: $color-yellow-450;
+        $highlightLightYellow: $color-yellow-200;
+        $highlightGreen: #64DD17;
+        $highlightLightGreen: #ACFF9D;
+        $highlightCyan: #38F2D0;
+        $highlightLightCyan: #BCFBEF;
+        $highlightBlue: #20D2F4;
+        $highlightLightBlue: $color-cyan-300;
+        $highlightMagenta: #D500F9;
+        $highlightLightMagenta: $color-purple-300;
+
+
+    // Gradients
+        $gradientBlue: linear-gradient(to bottom right,#0DBDD4 0%, #00B9DA 20%, $color-blue-600 90%, $color-blue-700 100%);
+        $gradientGreen: linear-gradient(to bottom right, #7DD27D 0%, #5ECA8F 20%, #3BC1A3 50%, #26BBAF 75%, #1EB9B4 90%);
+
+
+    // Opacity
+        $opacity-disabled: 0.5;
+        @mixin disabled {
+            opacity: $opacity-disabled !important;
+        }
+
+
+// Typography
+    // Font weights
+        $typo-weight-default: 400;
+        $typo-weight-medium: 500;
+
+    // Font sizes
+        $typo-size-base: 16px;
+        $typo-size-s: 0.858rem; // =12px
+        $typo-size-default: 16px; // =14px
+        $typo-size-l: 1.143rem; // =16px
+        $typo-size-xl: 1.571rem; // =22px
+        $typo-size-2xl: 1.714rem; // =24px
+        $typo-size-3xl: 2rem; // =28px
+        $typo-size-4xl: 2.286rem; // =32px
+
+    // Line heights
+        // Default line heights
+            $typo-lineHeight-s: 1.333; // =16px
+            $typo-lineHeight-default: 1.43; // =20px
+            $typo-lineHeight-l: 1.5; // =24px
+            $typo-lineHeight-xl: 1.273; // =28px
+            $typo-lineHeight-2xl: 1.333; // =32px
+            $typo-lineHeight-3xl: 1.286; // =36px
+            $typo-lineHeight-4xl: 1.25; // =40px
+
+        // Line height for labels
+            $typo-lineHeight-label-s: $typo-size-s;
+            $typo-lineHeight-label: $typo-size-default;
+            $typo-lineHeight-label-l: $typo-size-l;
+
+    // Letter spacing
+        $typo-letterSpacing-xs: 0.1px;
+        $typo-letterSpacing-s: 0.15px;
+        $typo-letterSpacing-m: 0.25px;
+        $typo-letterSpacing-l: 0.4px;
+        $typo-letterSpacing-xl: 0.5px;
+
+    // Typography definitions
+        // Headlines
+            @mixin typo-h1 {
+                font-weight: $typo-weight-default;
+                font-size: $typo-size-4xl;
+                letter-spacing: 0;
+                line-height: $typo-lineHeight-4xl;
+            }
+            @mixin typo-h2 {
+                font-weight: $typo-weight-default;
+                font-size: $typo-size-3xl;
+                letter-spacing: 0;
+                line-height: $typo-lineHeight-3xl;
+            }
+            @mixin typo-h3 {
+                font-weight: $typo-weight-default;
+                font-size: $typo-size-2xl;
+                letter-spacing: 0;
+                line-height: $typo-lineHeight-2xl;
+            }
+        
+        // Titles
+            @mixin typo-h4 {
+                font-weight: $typo-weight-default;
+                font-size: $typo-size-xl;
+                letter-spacing: 0;
+                line-height: $typo-lineHeight-xl;
+            }
+    
+            @mixin typo-h5 {
+                font-weight: $typo-weight-medium;
+                font-size: $typo-size-l;
+                letter-spacing: $typo-letterSpacing-s;
+                line-height: $typo-lineHeight-l;
+            }
+    
+            @mixin typo-h6 {
+                font-weight: $typo-weight-medium;
+                font-size: $typo-size-default;
+                letter-spacing: $typo-letterSpacing-xs;
+                line-height: $typo-lineHeight-default;
+            }
+
+        // Body
+            @mixin typo-body1 {
+                font-weight: $typo-weight-default;
+                font-size: $typo-size-l;
+                letter-spacing: $typo-letterSpacing-l;
+                line-height: $typo-lineHeight-l;
+            }
+
+            @mixin typo-body2 {
+                font-weight: $typo-weight-default;
+                font-size: $typo-size-default;
+                letter-spacing: $typo-letterSpacing-m;
+                line-height: $typo-lineHeight-default;
+            }
+
+            @mixin typo-body3 {
+                font-weight: $typo-weight-default;
+                font-size: $typo-size-s;
+                letter-spacing: $typo-letterSpacing-l;
+                line-height: $typo-lineHeight-s;
+            }
+
+        // Labels
+            // Regular
+                @mixin typo-label1-regular {
+                    font-weight: $typo-weight-default;
+                    font-size: $typo-size-l;
+                    letter-spacing: $typo-letterSpacing-s;
+                    line-height: $typo-lineHeight-label-l;
+                }
+
+                @mixin typo-label2-regular {
+                    font-weight: $typo-weight-default;
+                    font-size: $typo-size-default;
+                    letter-spacing: $typo-letterSpacing-xs;
+                    line-height: $typo-lineHeight-label;
+                }
+
+                @mixin typo-label3-regular {
+                    font-weight: $typo-weight-default;
+                    font-size: $typo-size-s;
+                    letter-spacing: $typo-letterSpacing-xl;
+                    line-height: $typo-lineHeight-label-s;
+                }
+
+            // Medium
+                @mixin typo-label1-medium {
+                    font-weight: $typo-weight-medium;
+                    font-size: $typo-size-l;
+                    letter-spacing: $typo-letterSpacing-s;
+                    line-height: $typo-lineHeight-label-l;
+                }
+
+                @mixin typo-label2-medium {
+                    font-weight: $typo-weight-medium;
+                    font-size: $typo-size-default;
+                    letter-spacing: $typo-letterSpacing-xs;
+                    line-height: $typo-lineHeight-label;
+                }
+
+                @mixin typo-label3-medium {
+                    font-weight: $typo-weight-medium;
+                    font-size: $typo-size-s;
+                    letter-spacing: $typo-letterSpacing-xl;
+                    line-height: $typo-lineHeight-label-s;
+                }
+
+                // surfaces
+                @mixin bg-surface-tertiary {
+                    background-color: $color-surface-tertiary;
+                }
+                .bg-surface-tertiary {
+                    @include bg-surface-tertiary;
+                }
+                .hover:hover{
+                    background-color: $color-overlay-black;
+                
+                }
+// Pixel Base
+    $pixel-base: 4px;
+
+
+// Spacing
+    $spacing-xxs: calc($pixel-base/2); //2px
+    $spacing-xs: $pixel-base; //4px
+    $spacing-s: calc($pixel-base*2); // 8px
+    $spacing-sm: calc($pixel-base*3); // 12px
+    $spacing-m: calc($pixel-base*4); // 16px
+    $spacing-ml: calc($pixel-base*5); // 20px
+    $spacing-l: calc($pixel-base*6); // 24px
+    $spacing-xl: calc($pixel-base*7); // 28px
+    $spacing-2xl: calc($pixel-base*8); // 32px
+    $spacing-3xl: calc($pixel-base*10); // 40px
+    $spacing-4xl: calc($pixel-base*12); // 48px
+    $spacing-5xl: calc($pixel-base*16); // 64px
+    $spacing-6xl: calc($pixel-base*20); // 80px
+
+
+// Border width
+    $border-width-default: 1px;
+    $border-width-thick: 2px;
+    $border-width-extra-thick: 4px;
+
+
+// Border radius
+    $border-radius-small: calc($pixel-base); // 4px
+    $border-radius-default: calc($pixel-base*2); // 8px
+    $border-radius-round: 1000px;
+
+
+// Elevation
+    $shadow-elevation-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    $shadow-elevation-2: 0px 3px 3px -2px rgba(0, 0, 0, 0.20), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+    $shadow-elevation-3: 0px 3px 5px -1px rgba(0, 0, 0, 0.20), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    $shadow-elevation-4: 0px 5px 5px -3px rgba(0, 0, 0, 0.20), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+    $shadow-elevation-3-inverse: 0px -3px 5px -1px rgba(0, 0, 0, 0.20), 0px -6px 10px 0px rgba(0, 0, 0, 0.14), 0px -1px 18px 0px rgba(0, 0, 0, 0.12);
+    // $boxShadowTop: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.15) 0px -4px 8px 0px;
+
+
+// Animations
+    $trans-time-default: 250ms;
+    $trans-time-short: 100ms;
+    $trans-style-default: ease-out;
+    $trans-style-bouncy: cubic-bezier(0.7, -0.4, 0.4, 1.4);
+    $trans-clicked: $trans-time-short $trans-style-bouncy;
+    $trans-pressed: $trans-time-default $trans-style-bouncy;
+
+
+// Other
+    $iconfont: "form-icons";
+    $checkmark: "\f101";
+
+    $sizes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15;
+    $directions: ("l": "left", "r": "right", "t": "top", "b": "bottom");
+    $largewidths: 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320;
