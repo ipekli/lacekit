@@ -1,0 +1,13 @@
+applicationKey: Saloon
+application: app
+brand: Brand
+
+# The following is dummy data
+favoriteColor: Red
+
+debug: "nein"
+myArray:
+  - "sdfsdf"
+  - "chäs"
+  - "fleisch"
+

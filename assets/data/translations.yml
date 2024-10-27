@@ -1,0 +1,59 @@
+# The fist language is the default language
+languages:
+  de: Deutsch
+  en: English
+
+#   GOOGLE DRIVE SPREADSHEET
+#   ------------------------
+# Please note:
+# - This is a link to a read only spread sheet.
+# - Replace this with a link to one of your files.
+# - You must be online for this to work
+
+# translations_url: "https://docs.google.com/spreadsheets/d/16qLrNxktIKivd4aVoWzJlJ_-wKw9afxSDlp8-3RtX0U/edit?usp=sharing"
+
+
+#   LOCAL CSV FILE
+#   ------------------------
+# If you prefer you can have a local CSV file. This is useful if you want to work offline or have privacy concerns.
+# Please note:
+# - The field delimiter is a comma and the row delimiter a new line.
+# - Escape commas that are part of the translations.
+
+# translations_url: "assets/csv/translations.csv"
+
+#   TEXT ARRAYS
+#   ------------------------
+# If you prefer you can have translations as text arrays.
+# Please note that these are ignored if a spread sheet or CSV file is used.
+translations:
+  cancel:
+    de: Abbrechen
+    en: Cancel
+  save:
+    de: Speichern
+    en: Save
+  send:
+    de: Senden
+    en: Send
+  signIn:
+    de: Anmelden
+    en: Sign in
+  thisIsAtest:
+    de: Das ist ein Test.
+    en: This is a test.
+  startHere:
+    de: Hier starten.
+    en: Start Here.
+  endOfPrototype:
+    de: Hier endet der Prototyp.
+    en: End of Prototype.
+  authTitle:
+    de: "Prototyp Autorisierung"
+    en: "Prototype Authorisation"
+  authText:
+    de: "Autorisierungscode eingeben "
+    en: "Enter Authorisation Code"
+  authError:
+    de: "Code Falsch, bitte nochmals versuchen. "
+    en: "Wrong Code, please try again"
