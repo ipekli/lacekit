@@ -34,6 +34,10 @@ body {
     height: 100%;
 }
 
+.container{
+    padding: $spacing-m;
+}
+
 .typo-body1 {
   @include typo-body1;
   &.secondary {
