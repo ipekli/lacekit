@@ -1,18 +1,25 @@
 {
     "name": "memibeltrame/lacekit",
     "license": "MIT",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "LaceKit is a data driven prototyping framework for designers",
+    "type": "project",
     "require": {
+        "composer/installers": "^2.0",
         "php": ">=8.2"
+    },
+    "extra": {
+        "installer-paths": {
+            "./": ["type:project"]
+        }
     },
     "scripts": {
         "post-install-cmd": [
-            "cp -R vendor/memibeltrame/lacekit/core/ core",
-            "cp -R vendor/memibeltrame/lacekit/assets assets",
-            "cp -R vendor/memibeltrame/lacekit/snippets snippets",
-            "cp vendor/memibeltrame/lacekit/index.php index.php",
-            "cp vendor/memibeltrame/lacekit/functions_controller.php functions_controller.php"
+            "php -r \"copyDir(__DIR__ . '/vendor/memibeltrame/lacekit/core', __DIR__ . '/core');\"",
+            "php -r \"copyDir(__DIR__ . '/vendor/memibeltrame/lacekit/core', __DIR__ . '/assets');\"",
+            "php -r \"copy(__DIR__ . '/vendor/memibeltrame/lacekit/index.php', __DIR__ . '/index.php');\"",
+            "php -r \"copy(__DIR__ . '/vendor/memibeltrame/lacekit/functions_controller.php', __DIR__ . '/functions_controller.php');\"",
+            "php -r \"copyDir(__DIR__ . '/vendor/memibeltrame/lacekit/snippets', __DIR__ . '/snippets');\""
         ]
     }
 }
