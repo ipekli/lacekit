@@ -1,7 +1,7 @@
 {
     "name": "memibeltrame/lacekit",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "LaceKit is a data driven prototyping framework for designers",
     "require": {
         "php": ">=8.2"
