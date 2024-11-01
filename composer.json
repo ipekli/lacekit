@@ -1,5 +1,5 @@
 {
-    "name": "memibeltrame/saloon",
+    "name": "memibeltrame/lacekit",
     "description": "Saloon isa data driven prototyping framework for designers",
     "require": {
         "php": ">=8.2"
