@@ -16,6 +16,9 @@
     "scripts": {
         "post-install-cmd": [
             "php vendor/memibeltrame/lacekit/core/postInstall.php"
+        ],
+        "post-update-cmd": [
+            "php vendor/memibeltrame/lacekit/core/postInstall.php"
         ]
     }
 }
