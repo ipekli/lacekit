@@ -1,5 +1,6 @@
 {
     "name": "memibeltrame/lacekit",
+    "license": "MIT",
     "description": "Saloon isa data driven prototyping framework for designers",
     "require": {
         "php": ">=8.2"
