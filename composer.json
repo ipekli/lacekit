@@ -1,24 +1,19 @@
 {
     "name": "memibeltrame/lacekit",
     "license": "MIT",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "LaceKit is a data driven prototyping framework for designers",
     "type": "project",
     "require": {
-        "composer/installers": "^2.0",
+        "composer-plugin-api": "^2.0",
         "php": ">=8.2"
     },
-    "extra": {
-        "installer-paths": {
-            "./": ["type:project"]
+    "autoload": {
+        "psr-4": {
+            "memibeltrame\\LaceKit\\": "src/"
         }
     },
-    "scripts": {
-        "post-install-cmd": [
-            "php vendor/memibeltrame/lacekit/core/postInstall.php"
-        ],
-        "post-update-cmd": [
-            "php vendor/memibeltrame/lacekit/core/postInstall.php"
-        ]
+    "extra": {
+        "class": "memibeltrame\\LaceKit\\LaceKitPlugin"
     }
 }
