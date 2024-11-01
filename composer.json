@@ -8,10 +8,11 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "cp -R lacekit/install/assets assets",
-            "cp -R lacekit/install/snippets snippets",
-            "cp lacekit/install/index.php index.php",
-            "cp lacekit/install/functions_controller.php functions_controller.php"
+            "cp -R vendor/memibeltrame/core/ core",
+            "cp -R vendor/memibeltrame/assets assets",
+            "cp -R vendor/memibeltrame/snippets snippets",
+            "cp vendor/memibeltrame/index.php index.php",
+            "cp vendor/memibeltrame/functions_controller.php functions_controller.php"
         ]
     }
 }
