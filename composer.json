@@ -8,11 +8,11 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "cp -R vendor/memibeltrame/core/ core",
-            "cp -R vendor/memibeltrame/assets assets",
-            "cp -R vendor/memibeltrame/snippets snippets",
-            "cp vendor/memibeltrame/index.php index.php",
-            "cp vendor/memibeltrame/functions_controller.php functions_controller.php"
+            "cp -R vendor/memibeltrame/lacekit/core/ core",
+            "cp -R vendor/memibeltrame/lacekit/assets assets",
+            "cp -R vendor/memibeltrame/lacekit/snippets snippets",
+            "cp vendor/memibeltrame/lacekit/index.php index.php",
+            "cp vendor/memibeltrame/lacekit/functions_controller.php functions_controller.php"
         ]
     }
 }
