@@ -1,0 +1,7 @@
+{
+    "name": "memibeltrame/saloon",
+    "description": "Saloon isa data driven prototyping framework for designers",
+    "require": {
+        "php": ">=8.2"
+    }
+}
