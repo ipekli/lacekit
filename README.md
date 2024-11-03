@@ -53,8 +53,6 @@ If you prefer using a full-featured local development environment, you can use:
 
 ## Getting Started
 
-```
-
 ## Documentation
 
 For detailed documentation and examples, please visit our documentation page (coming soon).
