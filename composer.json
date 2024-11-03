@@ -9,7 +9,10 @@
     },
     "extra": {
         "installer-paths": {
-            "vendor/your-vendor/lacekit-installer": ["type:composer-plugin"]
+            "vendor/memibeltrame/lacekit-installer": ["type:composer-plugin"]
         }
+    },
+    "scripts": {
+        "start": "php -S localhost:8000"
     }
 }
