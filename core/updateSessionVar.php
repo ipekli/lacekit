@@ -1,5 +1,5 @@
 <?php
-include('protostrap.php');
+include('lacekit.php');
 
 
 $tmpType = false;

@@ -1,7 +1,7 @@
 <?php
 /***********
  *
- * Protostrap
+ * Lacekit
  * v. 3.2
  *
  ***********/
@@ -258,8 +258,8 @@ function readAsset($type, $config){
         }
     };
 
-    // attach protostrap
-    $combined .= file_get_contents('assets/' . $type . '/protostrap.'.$type);
+    // attach lacekit
+    $combined .= file_get_contents('assets/' . $type . '/lacekit.'.$type);
 
     // write combined File
     $combinedFile = "assets/". $type ."/combined.". $type ;

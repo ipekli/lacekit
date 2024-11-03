@@ -1,61 +1,10 @@
     /**
-     *   PROTOSTRAP GOODIES - LEAVE ALONE 
-     *   v. 3.3
+     *   LACEKIT GOODIES - LEAVE ALONE 
+     *   v. 0.1
      */
 
 
-    // Define Datepicker Languages
-    $.fn.datepicker.dates['de'] = {
-        days: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"],
-        daysShort: ["Son", "Mon", "Die", "Mit", "Don", "Fre", "Sam", "Son"],
-        daysMin: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
-        months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
-        monthsShort: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
-        today: "Heute",
-        clear: "Löschen",
-        weekStart: 1,
-        format: "dd.mm.yyyy"
-    }
-    $.fn.datepicker.dates['fr'] = {
-        days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
-        daysShort: ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"],
-        daysMin: ["D", "L", "Ma", "Me", "J", "V", "S", "D"],
-        months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-        monthsShort: ["Jan", "Fév", "Mar", "Avr", "Mai", "Jui", "Jul", "Aou", "Sep", "Oct", "Nov", "Déc"],
-        today: "Aujourd'hui",
-        clear: "Effacer",
-        weekStart: 1,
-        format: "dd.mm.yyyy"
-    };
-    $.fn.datepicker.dates['it'] = {
-        days: ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"],
-        daysShort: ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"],
-        daysMin: ["Do", "Lu", "Ma", "Me", "Gi", "Ve", "Sa", "Do"],
-        months: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
-        monthsShort: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
-        today: "Oggi",
-        clear: "Cancella",
-        weekStart: 1,
-        format: "dd.mm.yyyy"
-    };
-    $.fn.datepicker.dates['es'] = {
-        days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"],
-        daysShort: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
-        daysMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"],
-        months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-        monthsShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
-        today: "Hoy",
-        clear: "Cancela",
-        weekStart: 1,
-        format: "dd.mm.yyyy"
-    };
-
-    // File input
-
-
-    // Switch
-
-
+   
     function updateSessionVar(type, varname, val){
         $.get('core/updateSessionVar.php?type=' + type + '&varname=' + varname + '&val=' + val, function(data){
             return;
@@ -116,34 +65,12 @@
 
     $(function(){
 
-        // Carousel if there is any
-        $('.carousel').carousel(
-            {interval: 0}
-        );
-
-        $('.btn-spinner').on('click', function() {
-          // keep width of button
-          var width = $(this).outerWidth();
-          $(this).css("width", width+"px");
-          // spinner markup
-          var spinner = "<i class=\"fa fa-spinner fa-spin\"></i>";
-          // original button label
-          var tmpContent = $(this).html();
-          // show spinner
-          $(this).html(spinner);
-          // make scope for timeout function
-          var that = $(this);
-            setTimeout(function() {
-               // rollback
-               $(that).html(tmpContent);
-           }, 1000);
-        });
-
-        $(".fakeReload").click(function() {
+        // 
+        $(".fakeReload").on("click",function() {
             var spinnerMarkup = "<div class=\" align-center\">";
             spinnerMarkup += "    ";
-            spinnerMarkup += "    <i class=\"fa fa-spinner fa-spin fa-3x\"></i>";
-            spinnerMarkup += "    <br><br><br>";
+            spinnerMarkup += "    <sl-spinner></sl-spinner>";
+            spinnerMarkup += "    ";
             spinnerMarkup += "</div>";
             var target = $(this).data("target");
             var tmpContent = $("#"+target).html();
@@ -153,17 +80,8 @@
             },1000);
         });
 
-        $('.tooltiptrigger').tooltip({trigger: "click"});
-        $(".tooltiptrigger").click(function() {
-            if($(this).data("hide") != undefined){
-                var delay = $(this).data("hide");
-                var that = this;
-                setTimeout( function(){
-                    $(that).tooltip('hide')}, delay);
-            }
-        });
 
-        $(".trigger").click(function() {
+        $(".trigger").on("click",function() {
             var group = $(this).data("group");
             var item = $(this).data("item");
             $("."+group).addClass("hide");
@@ -172,7 +90,7 @@
 
 
 
-        $(".copyToClipboard").click(function() {
+        $(".copyToClipboard").on("click",function() {
             var target = $(this).data("target");
             var text = $("#"+target).html();
             $('<div style="opacity:0"><textarea id="textarea'+target+'">'+text+'</textarea></div>').appendTo("body");
@@ -182,7 +100,7 @@
             showTooltip(this, "Copied to Clipboard");
         });
 
-        $(".showHide").click(function() {
+        $(".showHide").on("click",function() {
             if($("#"+$(this).data("show")).hasClass("hide")){
                 $("#"+$(this).data("show")).css("display", "none").removeClass("hide");
             }
@@ -202,19 +120,8 @@
             myScroll.scrollToElement('li.active');
         }
 
-        $(".dynForm").click(function(el) {
-            $("." + $(this).attr("data-toggle-class")).toggle();
-        });
-
-        $("select.dynForm").change(function(el) {
-
-            $(".dynFormGroup").hide();
-            $("." + $("select option:selected").attr("data-toggle-class")).toggle();
-
-        });
-
         // Manage checkbox handling for session data
-        $('.sessionCheckbox').click(function(){
+        $('.sessionCheckbox').on("click",function(){
 
             if(this.checked){
 
@@ -227,7 +134,7 @@
             }
           });
 
-        $(".filterSearch").keyup(function(){
+        $(".filterSearch").on("keyup",function(){
 
             jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function (arg) {
                 return function (elem) {
@@ -276,41 +183,28 @@
         });
 
         // select Users to for easy Login
-        $(".loginUser").click(function() {
+        $(".loginUser").on("click",function() {
             $('#login').val($(this).attr("data-key"));
             $('#loginform').submit();
         });
 
-        $(".loginFirstUser").click(function() {
+        $(".loginFirstUser").on("click",function() {
             if($('#login').val().length == 0 ){
                 $('#login').val($(this).attr("data-key"));
             }
             $('#loginform').submit();
         });
 
-        //password show toggle
-        $(".passwordToggle").click(function() {
-            $(this).children('i').toggleClass('fa-square-o');
-            $(this).children('i').toggleClass('fa-check-square-o');
-            $(this).prev().attr('type', function(id, oldval){
-                if (oldval == 'password') {
-                    return 'text';
-                } else {
-                    return 'password';
-                }
-            })
-        });
-
-        $(".checkall").click(function() {
+        $(".checkall").on("click",function() {
                 $("." + $(this).data("class")).prop('checked',$(this).prop('checked'));
         });
 
 
-        $(".selectOnFocus").focus(function() {
+        $(".selectOnFocus").on("focus",function() {
             $(this).select();
         });
 
-        $(".stepper .btn-next").click(function() {
+        $(".stepper .btn-next").on("click",function() {
             var nextId = $(this).attr("data-nextid");
             var thisId = parseInt(nextId) - 1;
 
@@ -329,7 +223,7 @@
 
        });
 
-       $(".stepper .btn-prev").click(function() {
+       $(".stepper .btn-prev").on("click",function() {
             var prevId = parseInt($(this).attr("data-previd"));
             var thisId = prevId + 1;
 
@@ -366,80 +260,7 @@
             $($(this).data("target")).addClass("active");
        });
 
-
-        var getToggleSinglePrimaryParent = function(el){
-            tpmParent = $(el).parent();
-            while(!$(tpmParent).hasClass("toggleSinglePrimary")){
-                tpmParent = $(tpmParent).parent();
-            }
-            return tpmParent;
-        }
-
-        $("body").on("click",".toggleSinglePrimary .btn", function() {
-            var removePrimary = false;
-            var parent = getToggleSinglePrimaryParent($(this));
-            if($(this).hasClass("btn-primary")){
-                if($(parent).hasClass("mandatory")){
-                    return;
-                }
-                removePrimary = true;
-            }
-
-            $(parent).find(".btn-primary").removeClass("btn-primary");
-            $(this).addClass("btn-primary");
-            if(removePrimary == true){
-                $(this).removeClass("btn-primary");
-            }
-        });
-
-        $("body").on("click",".toggleMultiPrimary .btn", function() {
-            $(this).toggleClass("btn-primary");
-        });
-
-        $(".btn-togglePrimary").click(function() {
-
-            $(this).toggleClass("btn-primary");
-            var icon = $(this).find("i").first();
-            if($(icon).hasClass("fa-heart-o")){
-                $(icon).removeClass("fa-heart-o");
-                $(icon).addClass("fa-heart");
-                return;
-            }
-            if($(icon).hasClass("fa-heart")){
-                $(icon).removeClass("fa-heart");
-                $(icon).addClass("fa-heart-o");
-                return;
-            }
-            if($(icon).hasClass("fa-star-o")){
-                $(icon).removeClass("fa-star-o");
-                $(icon).addClass("fa-star");
-                return;
-            }
-            if($(icon).hasClass("fa-star")){
-                $(icon).removeClass("fa-star");
-                $(icon).addClass("fa-star-o");
-                return;
-            }
-            if($(icon).hasClass("fa-user-o")){
-                $(icon).removeClass("fa-user-o");
-                $(icon).addClass("fa-user");
-                return;
-            }
-            if($(icon).hasClass("fa-user")){
-                $(icon).removeClass("fa-user");
-                $(icon).addClass("fa-user-o");
-                return;
-            }
-        });
-
-        $(".btn-onCard.bottomRight, .btn-onCard.bottomLeft").each(function (it, elem) {
-            var imgheight = $(elem).siblings("img").first().height();
-            var top = imgheight -  10 - $(elem).outerHeight();
-            $(elem).css("top", top);
-        });
-
-
-        $(document).bind('keydown','alt+r', function(){
+        $(document).on('keydown','alt+r', function(){
             var url = window.location.href;
             var get = "session_renew=true";
             var start = "?";
@@ -449,23 +270,14 @@
             window.location.href = url+start+get;
         });
 
-        $(".showpopover").click(function() {
 
-            $('#popoversuccess').popover('show')
-            setTimeout(function(){
-                $("#popoversuccess").popover("hide");
-            },2000);
-        });
-
-
-
-        $(".countDown").click(function() {
+        $(".countDown").on("click",function() {
             var target = $(this).data("target");
             countDown(target);
         });
 
 
-        $(".scrollTo").click(function() {
+        $(".scrollTo").on("click",function() {
             var scrollTo = $(this);
             var offset = 10;
 
@@ -482,7 +294,7 @@
         });
 
         // FORM BEHAVIOR
-        $(".checkform").click(function() {
+        $(".checkform").on(function() {
             checkform(this);
         });
 
@@ -535,7 +347,7 @@
             $('.collapseForm').collapse('toggle');
         }
 
-        $(".formCollapse").click(function() {
+        $(".formCollapse").on("click",function() {
             formCollapse();
             $(".submitfeedback").toggleClass("hide");
         });
@@ -544,25 +356,19 @@
         // Sends a key value pair to be set
         // Example Usecase is logging in over ajax
 
-        $(".sendval").click(function() {
+        $(".sendval").on("click",function() {
             let varname = $(this).data("varname");
             let val = $(this).data("val");
             updateSessionVar("set", varname, val);
         });
 
-        $(".toggleIcons").click(function() {
+        $(".toggleIcons").on("click",function() {
             let icons = $(this).data("icons").split(",");
             $(this).find("i").toggleClass(icons[0]).toggleClass(icons[1]);
         });
 
-        $(".toggleChevron").click(function() {
+        $(".toggleChevron").on("click",function() {
             $(this).find("i").toggleClass("icons8-chevron-down").toggleClass("icons8-chevron-down");
         });
-
-        
-        $(".setDropdownBtnLabel").click(function() {
-            $(this).closest("div.btn-group").find("span.dropdown-toggle").html($(this).find("a").html()+' <span class="caret">');
-        });
-
 
     })

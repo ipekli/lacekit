@@ -1,8 +1,7 @@
 $(function () {
     /* 
-            This file initializes a few elements by default 
-            Feel free to remove them if not needed
-        */
+        This file is where you can add your own custom javascript
+    */
     console.log("main.js loaded");
     
 });

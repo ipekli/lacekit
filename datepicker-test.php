@@ -3,7 +3,7 @@
     This file sets up project-wide things like authentication -
     DO NOT REMOVE
 **/
-include('./core/protostrap.php');
+include('./core/lacekit.php');
 ?><!DOCTYPE html>
 <html>
     <head>

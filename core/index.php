@@ -8,7 +8,7 @@
 **/
 
 
-include('protostrap.php');
+include('lacekit.php');
 
 /* Update stuff */
 
@@ -54,7 +54,7 @@ $activeNavigation = "one";
         <a href="../"><i class="fa fa-long-arrow-left"></i> Back to site</a><br>
         <hr>
         <br>
-        <h1>Protostrap Admin Panel</h1>
+        <h1>Lacekit Admin Panel</h1>
         <br>
 
         <div class="row">
