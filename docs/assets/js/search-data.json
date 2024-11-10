@@ -1,0 +1,128 @@
+{"0": {
+    "doc": "About",
+    "title": "About",
+    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll . ",
+    "url": "/docs/about/",
+    
+    "relUrl": "/about/"
+  },"1": {
+    "doc": "Grid System",
+    "title": "Grid System",
+    "content": "LaceKit includes a lightweight, flexible column grid system built using flexbox. The grid system provides a functional CSS approach, giving you precise control over your layouts with minimal overhead. ",
+    "url": "/docs/grid-system.html#grid-system",
+    
+    "relUrl": "/grid-system.html#grid-system"
+  },"2": {
+    "doc": "Grid System",
+    "title": "Basic Auto Layout",
+    "content": "Each column inside the row is automatically assigned an equal share of the total width. The columns are built to respect the layout over the content. Use the .row class as a container and .col for equal-width columns. &lt;div class=\"row\"&gt; &lt;div class=\"col\"&gt;Column 1&lt;/div&gt; &lt;div class=\"col\"&gt;Column 2&lt;/div&gt; &lt;div class=\"col\"&gt;Column 3&lt;/div&gt; &lt;/div&gt; . Column 1 Column 2 Column 3 ",
+    "url": "/docs/grid-system.html#basic-auto-layout",
+    
+    "relUrl": "/grid-system.html#basic-auto-layout"
+  },"3": {
+    "doc": "Grid System",
+    "title": "Column Sizes",
+    "content": "Specify column widths using numbered classes from 1 to 12. For example, .col-4 takes up 4 columns of space, while .col-8 takes 8 columns. &lt;div class=\"row\"&gt; &lt;div class=\"col-4\"&gt;Column 1&lt;/div&gt; &lt;div class=\"col-8\"&gt;Column 2&lt;/div&gt; &lt;/div&gt; . Column 1 Column 2 ",
+    "url": "/docs/grid-system.html#column-sizes",
+    
+    "relUrl": "/grid-system.html#column-sizes"
+  },"4": {
+    "doc": "Grid System",
+    "title": "Responsive Breakpoints",
+    "content": "The grid system includes responsive breakpoints for different screen sizes: . | sm: Small devices (≥500px) | md: Medium devices (≥744px) | lg: Large devices (≥1200px) | . For example, .col-12.col-md-6.col-lg-4 creates a column that is full width on mobile, half width on medium screens, and one-third width on large screens. ",
+    "url": "/docs/grid-system.html#responsive-breakpoints",
+    
+    "relUrl": "/grid-system.html#responsive-breakpoints"
+  },"5": {
+    "doc": "Grid System",
+    "title": "Row Modifiers",
+    "content": "Horizontal Alignment . Control horizontal alignment with these modifiers: . | .row-start: Align columns to start | .row-center: Center align columns | .row-end: Align columns to end | . &lt;div class=\"row row-end\"&gt; &lt;div class=\"col\"&gt;Column 1&lt;/div&gt; &lt;div class=\"col\"&gt;Column 2&lt;/div&gt; &lt;/div&gt; . Column 1 Column 2 Mixed Columns . You can mix column sizes and alignments to create complex layouts. This is the real power of flexbox at work in your layouts. &lt;div class='row'&gt; &lt;div class='col col-fixed' style='width:80px;'&gt; col col-fixed &lt;/div&gt; &lt;div class='col'&gt; col &lt;/div&gt; &lt;div class='col'&gt; col &lt;/div&gt; &lt;/div&gt; . col col-fixed col col Vertical Alignment . Adjust vertical alignment using: . | .row-top: Align to top | .row-middle: Center align vertically | .row-bottom: Align to bottom | . ",
+    "url": "/docs/grid-system.html#row-modifiers",
+    
+    "relUrl": "/grid-system.html#row-modifiers"
+  },"6": {
+    "doc": "Grid System",
+    "title": "Column Modifiers",
+    "content": "Column Ordering . Change visual order with: . | .col-first: Move column to start | .col-last: Move column to end | . Column Offsets . Use offset classes like .col-offset-3 to create space before columns. For example, .col-6.col-offset-3 creates a centered column with offset. ",
+    "url": "/docs/grid-system.html#column-modifiers",
+    
+    "relUrl": "/grid-system.html#column-modifiers"
+  },"7": {
+    "doc": "Grid System",
+    "title": "Nesting",
+    "content": "Rows can be nested inside columns for complex layouts. Simply place a new .row inside a .col element to create nested grids. ",
+    "url": "/docs/grid-system.html#nesting",
+    
+    "relUrl": "/grid-system.html#nesting"
+  },"8": {
+    "doc": "Grid System",
+    "title": "Additional Features",
+    "content": "No Gutters . Use .row-no-gutters to remove spacing between columns. Auto Width . Use .col-auto to let columns size to their content, while regular .col elements take up the remaining space. The grid system is designed to be intuitive and flexible while maintaining a minimal footprint. All classes follow a consistent naming convention for ease of use. ",
+    "url": "/docs/grid-system.html#additional-features",
+    
+    "relUrl": "/grid-system.html#additional-features"
+  },"9": {
+    "doc": "Grid System",
+    "title": "Grid System",
+    "content": "| ",
+    "url": "/docs/grid-system.html",
+    
+    "relUrl": "/grid-system.html"
+  },"10": {
+    "doc": "Home",
+    "title": "Home",
+    "content": "This is a bare-minimum template to create a Jekyll site that uses the Just the Docs theme. You can easily set the created site to be published on GitHub Pages – the README file explains how to do that, along with other details. If Jekyll is installed on your computer, you can also build and preview the created site locally. This lets you test changes before committing them, and avoids waiting for GitHub Pages.1 And you will be able to deploy your local build to a different platform than GitHub Pages. More specifically, the created site: . | uses a gem-based approach, i.e. uses a Gemfile and loads the just-the-docs gem | uses the GitHub Pages / Actions workflow to build and publish the site on GitHub Pages | . Other than that, you’re free to customize sites that you create with this template, however you like. You can easily change the versions of just-the-docs and Jekyll it uses, as well as adding further plugins. Browse our documentation to learn more about how to use this theme. To get started with creating a site, simply: . | click “use this template” to create a GitHub repository | go to Settings &gt; Pages &gt; Build and deployment &gt; Source, and select GitHub Actions | . If you want to maintain your docs in the docs directory of an existing project repo, see Hosting your docs from an existing project repo in the template README. | It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub. &#8617; . | . ",
+    "url": "/docs/",
+    
+    "relUrl": "/"
+  },"11": {
+    "doc": "JavaScript Functions",
+    "title": "JavaScript Functions",
+    "content": "This is an overview of useful Helper Classes and JavaScript functions. They help you make your prototype interactive and playful. ",
+    "url": "/docs/javascript-functions.html",
+    
+    "relUrl": "/javascript-functions.html"
+  },"12": {
+    "doc": "JavaScript Functions",
+    "title": "Helper Classes",
+    "content": "| Class | Description and Attributes | . | .btn-spinner | If a button with this class is clicked its label is replaced by a spinner for the duration of a second.Data attributes: None | . | .checkall | Used in table headers to check all checkboxes in the column.Data attributes:- data-class: The class the checkboxes must have to be affected | . | .copyToClipboard | Copies the content of the element specified in the data-target attribute to the clipboard.Data attributes:- data-target: The element of which the content is to be copied | . | .fakeReload | When clicked, triggers a fake reload for the element specified in the data-target attribute. The target element is replaced with a spinner for 1 second.Data attributes:- data-target: The element that is to be replaced by the spinner | . | .loginUser | When clicked, logs in the user specified by the data-key attribute. Requires a login form on the page.Data attributes:- data-key: The email address that identifies the user to log in | . | .passwordToggle | Added to an input-group-addon with a .fa-square icon. Clicking it toggles password visibility.Data attributes: None | . | .selectOnFocus | When added to an input field, the content gets selected on focus.Data attributes: None | . | .toggleMultiPrimary | When added to a button group, clicking buttons toggles the .btn-primary class. Multiple buttons can have the primary class.Data attributes: None | . | .toggleSinglePrimary | When added to a button group, clicking buttons adds .btn-primary class while removing it from other buttons.Data attributes: None | . | .tooltiptrigger | Adds Bootstrap tooltip functionality to elements.Data attributes:- data-hide: (optional) Number of milliseconds after which the tooltip is closed | . | .trigger | Buttons with this class filter elements of a group.Data attributes:- data-group: The selector class for the elements- data-item: The selector class of elements to be shown | . ",
+    "url": "/docs/javascript-functions.html#helper-classes",
+    
+    "relUrl": "/javascript-functions.html#helper-classes"
+  },"13": {
+    "doc": "JavaScript Functions",
+    "title": "Function Reference",
+    "content": "| Function | Description and Parameters | . | countDown() | Reads the content of the specified element, subtracts 11% and writes a rounded value back.Parameters:- target: The element affectedUsage: countDown(target) | . | showTooltip() | Triggers a tooltip programmatically from inside jQuery.Parameters:- target: The element over which the tooltip is shown- text: The tooltip textUsage: showTooltip(target, text) | . | updateSessionVar() | Sends an AJAX request to update the specified session variable.Parameters:- updateType: Type of update (“set”, “push”, “remove”, or “null”)- variable: Name of the variable (can include full path, e.g. “news.1.title”)- value: The new valueUsage: updateSessionVar(updateType, variable, value) | . ",
+    "url": "/docs/javascript-functions.html#function-reference",
+    
+    "relUrl": "/javascript-functions.html#function-reference"
+  },"14": {
+    "doc": "JavaScript Functions",
+    "title": "Usage Examples",
+    "content": "Button Spinner . ",
+    "url": "/docs/javascript-functions.html#usage-examples",
+    
+    "relUrl": "/javascript-functions.html#usage-examples"
+  },"15": {
+    "doc": "PHP Functions",
+    "title": "PHP Functions",
+    "content": "This is an overview of useful PHP functions and variables provided by LaceKit. They let you work with data easily and make your prototype feel real. ",
+    "url": "/docs/php-functions.html",
+    
+    "relUrl": "/php-functions.html"
+  },"16": {
+    "doc": "PHP Functions",
+    "title": "Function Reference",
+    "content": "| Function | Description and Parameters | . | __() | (Two underscores) Returns the translation for the provided key. Returns the value of the key when no translation is found.Parameters:- key: The key to translate- language (optional): The language to translate to. Defaults to current active languageUsage: __($key) or __($key, $language) | . | alert() | Builds the HTML for a Bootstrap Alert.Parameters:- text: The alert text (can contain HTML)- class (optional): Bootstrap alert modifier class (info/success/warning/danger)- icon (optional): Font Awesome icon name- id (optional): Custom alert ID- dismiss (optional): Boolean to make alert dismissable (default: true)Usage: alert($text) or alert($text, $class) | . | forceLogin() | Forces user login to access the requested page. Shows login form if user is not logged in.Usage: forceLogin() | . | getDeeplink() | Returns link to current page including GET Parameters and automatic user login. Useful for role-based prototypes.Usage: getDeeplink() | . | getFirstUserLogin() | Gets the email of the first user specified in users.yml file.Usage: getFirstUserLogin() | . | getUniqueId() | Returns an incremented unique identifier number.Parameters:- variableName (optional): Variable name for unique ID trackingUsage: getUniqueId() or getUniqueId($variableName) | . | hideIf() | Outputs the class “hide” if current user is in specified usergroups.Parameters:- usergroups: Comma-separated list of affected usergroupsUsage: hideIf(\"admin, superadmin\") | . | includeIf() | Includes specified file if current user is in specified usergroups.Parameters:- usergroups: Comma-separated list of affected usergroups- file: Path to file to includeUsage: includeIf(\"admin\", \"path/to/file\") | . | makeDateFromString() | Converts text description to date format.Parameters:- string: Text datetime description- format (optional): PHP date format patternUsage: makeDateFromString(\"last Thursday\") | . | reorder() | Reorders array by specified key values.Parameters:- array: Array to reorder- column: Key to sort by- direction (optional): “asc” or “desc” (default: asc)Usage: reorder($array, $column) | . | showIf() | Opposite of hideIf() - shows content for specified usergroups.Parameters:- usergroups: Comma-separated list of affected usergroupsUsage: showIf(\"admin, superadmin\") | . | today() | Returns today’s date in configured format.Parameters:- format (optional): PHP date format patternUsage: today() or today(\"Y-m-d\") | . | tomorrow() | Returns tomorrow’s date in configured format.Parameters:- format (optional): PHP date format patternUsage: tomorrow() or tomorrow(\"Y-m-d\") | . | yesterday() | Returns yesterday’s date in configured format.Parameters:- format (optional): PHP date format patternUsage: yesterday() or yesterday(\"Y-m-d\") | . ",
+    "url": "/docs/php-functions.html#function-reference",
+    
+    "relUrl": "/php-functions.html#function-reference"
+  },"17": {
+    "doc": "PHP Functions",
+    "title": "Variables",
+    "content": "| Variable | Description | . | $lastUniqueId | Returns the last value assigned by getUniqueId() | . | $currentYear | Returns current year as four digit number | . | $loggedIn | Boolean indicating if user is logged in | . | $justloggedIn | Boolean true only on page called by login form | . | $activeUser | Array of current active user data (false if not logged in) | . | $username | Active user’s username | . | $usermail | Active user’s email | . | $userrole | Active user’s role | . | $userpermissions | Array of user permissions from users.yml | . ",
+    "url": "/docs/php-functions.html#variables",
+    
+    "relUrl": "/php-functions.html#variables"
+  }
+}

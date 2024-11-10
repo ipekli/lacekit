@@ -15,17 +15,12 @@ $screen-lg: 1200px;
 ////////////////////////
 .row {
     box-sizing: border-box;
-    display: -webkit-flex;
-    display: -webkit-box;
     display: flex;
-    -webkit-flex: 0 1 auto;
     -webkit-box-flex: 0;
     flex: 0 1 auto;
-    -webkit-flex-direction: row;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-direction: row;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 ($base-unit * -1) 0 ($base-unit * -1);
     //Use this modifier to remove gutters
@@ -35,7 +30,25 @@ $screen-lg: 1200px;
             padding: 0;
         }
     }
+    &.demo {
+        .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+            position: relative;
+        }
+        .col:after, .col-1:after, .col-2:after, .col-3:after, .col-4:after, .col-5:after, .col-6:after, .col-7:after, .col-8:after, .col-9:after, .col-10:after, .col-11:after, .col-12:after {
+            z-index: -2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            background-color: #d3c0ff;
+            width: calc(100% - 16px);
+            height: 100%;
+            border-radius: 4px;
+            margin: 0 8px;
+        }
+    }
 }
+
 
 .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     box-sizing: border-box;
