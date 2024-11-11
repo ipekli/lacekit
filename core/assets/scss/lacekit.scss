@@ -24,7 +24,6 @@
 html {
     font-size: $typo-size-default;
     line-height: $typo-lineHeight-default;
-    color: #f00;
 }
 
 
@@ -34,6 +33,12 @@ body {
     color: $color-typo-primary;
     height: 100%;
 }
+
+body {
+    font-family: var(--sl-font-sans);
+    font-size: var( --sl-font-size-medium);
+}
+
 
 .container{
     padding: $spacing-m;

@@ -560,4 +560,4 @@ class Datepicker extends HTMLElement {
   }
 }
 
-customElements.define('date-picker', Datepicker)
+customElements.define('lk-datepicker', Datepicker)

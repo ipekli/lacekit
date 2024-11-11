@@ -31,6 +31,12 @@ include('./core/lacekit.php');
 </head>
 <body class="pb8">
     <div class="container p4">
+        <h1 class="section-title">Datepicker Demo</h1>
+            <div class="row">
+                <div class="col-3">
+                    <lk-datepicker value="<?php echo date('d.m.Y'); ?>"></lk-datepicker>
+                </div>
+            </div>  
         <h1 class="section-title">Grid System Demo</h1>
         
         <!-- Full width -->
@@ -79,12 +85,7 @@ include('./core/lacekit.php');
             </div>
         </div>
 
-        <h1 class="section-title">Datepicker Demo</h1>
-        <div class="row">
-            <div class="col-3">
-                <date-picker value="<?php echo date('d.m.Y'); ?>"></date-picker>
-            </div>
-        </div>
+        
         <h1 class="section-title">Drawer Demo</h1>
         <sl-button class="open-drawer">Open Drawer</sl-button>
         <sl-drawer label="Drawer" class="drawer-overview">
