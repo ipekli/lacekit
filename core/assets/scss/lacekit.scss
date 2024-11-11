@@ -101,10 +101,11 @@ ul li {
 }
 
 $boxUnit: 10px;
+
 @for $i from 3 through 48 {
-    @container (max-width: calc($i * $boxUnit)) {
+    @container (max-width: calc( #{$i} * #{$boxUnit})) {
         .oneliner{
-            width:  calc(($i - 1) * $boxUnit);
+            width:  calc((#{$i} - 1) * #{$boxUnit});
         }
     }
   }
@@ -435,20 +436,6 @@ $boxUnit: 10px;
     justify-content: flex-start;
 }
 
-.alert {
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    a{
-        text-transform: uppercase;
-        display: inline-block;
-        margin-top: 8px;
-    }
-    i{
-        color: $color-info;
-    }
-}
 
 a.nodecoration {
     color: inherit;

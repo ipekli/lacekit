@@ -362,234 +362,234 @@ ul li {
   container-type: inline-size;
 }
 
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 3 * 10px)) {
   .oneliner {
-    width: 20px;
+    width: calc((3 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 4 * 10px)) {
   .oneliner {
-    width: 30px;
+    width: calc((4 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 5 * 10px)) {
   .oneliner {
-    width: 40px;
+    width: calc((5 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 6 * 10px)) {
   .oneliner {
-    width: 50px;
+    width: calc((6 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 7 * 10px)) {
   .oneliner {
-    width: 60px;
+    width: calc((7 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 8 * 10px)) {
   .oneliner {
-    width: 70px;
+    width: calc((8 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 9 * 10px)) {
   .oneliner {
-    width: 80px;
+    width: calc((9 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 10 * 10px)) {
   .oneliner {
-    width: 90px;
+    width: calc((10 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 11 * 10px)) {
   .oneliner {
-    width: 100px;
+    width: calc((11 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 12 * 10px)) {
   .oneliner {
-    width: 110px;
+    width: calc((12 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 13 * 10px)) {
   .oneliner {
-    width: 120px;
+    width: calc((13 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 14 * 10px)) {
   .oneliner {
-    width: 130px;
+    width: calc((14 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 15 * 10px)) {
   .oneliner {
-    width: 140px;
+    width: calc((15 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 16 * 10px)) {
   .oneliner {
-    width: 150px;
+    width: calc((16 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 17 * 10px)) {
   .oneliner {
-    width: 160px;
+    width: calc((17 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 18 * 10px)) {
   .oneliner {
-    width: 170px;
+    width: calc((18 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 19 * 10px)) {
   .oneliner {
-    width: 180px;
+    width: calc((19 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 20 * 10px)) {
   .oneliner {
-    width: 190px;
+    width: calc((20 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 21 * 10px)) {
   .oneliner {
-    width: 200px;
+    width: calc((21 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 22 * 10px)) {
   .oneliner {
-    width: 210px;
+    width: calc((22 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 23 * 10px)) {
   .oneliner {
-    width: 220px;
+    width: calc((23 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 24 * 10px)) {
   .oneliner {
-    width: 230px;
+    width: calc((24 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 25 * 10px)) {
   .oneliner {
-    width: 240px;
+    width: calc((25 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 26 * 10px)) {
   .oneliner {
-    width: 250px;
+    width: calc((26 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 27 * 10px)) {
   .oneliner {
-    width: 260px;
+    width: calc((27 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 28 * 10px)) {
   .oneliner {
-    width: 270px;
+    width: calc((28 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 29 * 10px)) {
   .oneliner {
-    width: 280px;
+    width: calc((29 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 30 * 10px)) {
   .oneliner {
-    width: 290px;
+    width: calc((30 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 31 * 10px)) {
   .oneliner {
-    width: 300px;
+    width: calc((31 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 32 * 10px)) {
   .oneliner {
-    width: 310px;
+    width: calc((32 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 33 * 10px)) {
   .oneliner {
-    width: 320px;
+    width: calc((33 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 34 * 10px)) {
   .oneliner {
-    width: 330px;
+    width: calc((34 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 35 * 10px)) {
   .oneliner {
-    width: 340px;
+    width: calc((35 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 36 * 10px)) {
   .oneliner {
-    width: 350px;
+    width: calc((36 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 37 * 10px)) {
   .oneliner {
-    width: 360px;
+    width: calc((37 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 38 * 10px)) {
   .oneliner {
-    width: 370px;
+    width: calc((38 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 39 * 10px)) {
   .oneliner {
-    width: 380px;
+    width: calc((39 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 40 * 10px)) {
   .oneliner {
-    width: 390px;
+    width: calc((40 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 41 * 10px)) {
   .oneliner {
-    width: 400px;
+    width: calc((41 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 42 * 10px)) {
   .oneliner {
-    width: 410px;
+    width: calc((42 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 43 * 10px)) {
   .oneliner {
-    width: 420px;
+    width: calc((43 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 44 * 10px)) {
   .oneliner {
-    width: 430px;
+    width: calc((44 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 45 * 10px)) {
   .oneliner {
-    width: 440px;
+    width: calc((45 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 46 * 10px)) {
   .oneliner {
-    width: 450px;
+    width: calc((46 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 47 * 10px)) {
   .oneliner {
-    width: 460px;
+    width: calc((47 - 1) * 10px);
   }
 }
-@container (max-width: calc($i * $boxUnit)) {
+@container (max-width: calc( 48 * 10px)) {
   .oneliner {
-    width: 470px;
+    width: calc((48 - 1) * 10px);
   }
 }
 .pointer {
@@ -7046,21 +7046,6 @@ ul li {
 
 .flexbox {
   justify-content: flex-start;
-}
-
-.alert {
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-.alert a {
-  text-transform: uppercase;
-  display: inline-block;
-  margin-top: 8px;
-}
-.alert i {
-  color: #1C7CD6;
 }
 
 a.nodecoration {
